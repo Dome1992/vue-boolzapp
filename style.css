@@ -39,6 +39,7 @@ body {
 .container{
     height: 100vh;
     position: relative;
+    background-color: grey;
 }
 #wrapper-up{
     height: 100%px;
