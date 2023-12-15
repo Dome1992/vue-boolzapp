@@ -3,28 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e5ddd5;
-    padding: 20px;
-}
-
-.chat-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
 
 .message {
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 8px;
     max-width: 70%;
     clear: both;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .user-message {
@@ -35,7 +22,7 @@ body {
 .interlocutor-message {
     background-color: #fff;
     float: left;
-}*/
+}
 span{
     font-size: 13px;
     padding: 10px;
@@ -57,6 +44,7 @@ span{
     display: flex;
     margin:0 auto;
 }
+
 #main-content{
     height: 100%;
     background-color: rgb(255, 255, 255);
@@ -96,6 +84,7 @@ span{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 #sidebar{
     width: 400px;
     height: 100%;
@@ -117,6 +106,7 @@ span{
     color: #a7a6a6;
     padding:5px;
 }
+
 .ricevinotifiche{
     background-color:rgb(85, 229, 255);
     padding: 10px;
@@ -142,6 +132,7 @@ span{
     border-radius: 5px;
     width: 80%;
 }
+
 .fa-search{
     color: #a7a6a6;
     padding: 15px;

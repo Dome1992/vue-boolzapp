@@ -1,0 +1,141 @@
+const { createApp } = Vue;
+
+createApp({
+  data() {
+    return {
+      contacts: [
+        {
+          name: 'Michele',
+          avatar: 'Avatar/avatar_1.jpg',
+          visible: true,
+          messages: [
+            {
+              date: '10/01/2020 15:30:55',
+              message: 'Hai portato a spasso il cane?',
+              status: 'message user-message'
+            },
+            {
+              date: '10/01/2020 15:50:00',
+              message: 'Ricordati di stendere i panni',
+              status: 'message user-message'
+            },
+            // Altri messaggi...
+          ]
+        },
+        {
+            name: 'Fabio',
+            avatar: 'Avatar/avatar_2.jpg',
+            visible: true,
+            messages: [
+              {
+                date: '10/01/2020 16:30:55',
+                message: 'Tutto fatto',
+                status: 'message interlocutor-message'
+              },
+              // Altri messaggi...
+            ]
+        },
+        {
+            name: 'Samuele',
+            avatar: 'Avatar/avatar_3.jpg',
+            visible: true,
+            messages: [
+              {
+                date: '15/05/2023 17:30:55',
+                message: 'Andiamo al mare?',
+                status: 'message user-message'
+              },
+              // Altri messaggi...
+            ]
+        },
+        {
+            name: 'Alessandro',
+            avatar: 'Avatar/avatar_4.jpg',
+            visible: true,
+            messages: [
+              {
+                date: '15/05/2023 17:40:30',
+                message: 'Ciao Bro.. forse non riesco!',
+                status: 'message interlocutor-message'
+              },
+              // Altri messaggi...
+            ]
+        },
+        {
+            name: 'Giovanni',
+            avatar: 'Avatar/avatar_io.jpg',
+            visible: true,
+            messages: [
+              {
+                date: '15/05/2023 14:40:30',
+                message: 'Stasera calcetto?',
+                status: 'message user-message'
+              },
+              // Altri messaggi...
+            ]
+        },
+        {
+            name: 'Claudia',
+            avatar: 'Avatar/avatar_4.jpg',
+            visible: true,
+            messages: [
+              {
+                date: '15/05/2023 14:40:30',
+                message: 'Certo, chi perde paga il campo',
+                status: 'message interlocutor-message'
+              },
+              // Altri messaggi...
+            ]
+        },
+        {
+            name: 'Federico',
+            avatar: 'Avatar/avatar_1.jpg',
+            visible: true,
+            messages: [
+              {
+                date: '09/02/2023 09:40:30',
+                message: 'Hai finito il progetto?',
+                status: 'message user-message'
+              },
+              // Altri messaggi...
+            ]
+        },
+        {
+            name: 'Davide',
+            avatar: 'Avatar/avatar_io.jpg',
+            visible: true,
+            messages: [
+              {
+                date: '09/02/2023 09:40:30',
+                message: 'Si! ora ho pushato',
+                status: 'message interlocutor-message'
+              },
+              // Altri messaggi...
+            ]
+        },
+        
+      ]
+    };
+  }
+}).mount('#app');
+
+
+
+
+/*contacts: [
+    {
+        name: 'Michele',
+        avatar: './img/avatar_1.png',
+        visible: true,
+        messages: [
+            {
+                date: '10/01/2020 15:30:55',
+                message: 'Hai portato a spasso il cane?',
+                status: 'sent'
+            },
+            {
+                date: '10/01/2020 15:50:00',
+                message: 'Ricordati di stendere i panni',
+                status: 'sent'
+            },
+            {*/

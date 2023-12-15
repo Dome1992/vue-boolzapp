@@ -10,11 +10,12 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="app">
 
-    <div id="wrapper">
+        <div id="wrapper">
        
-        <div id="container">
-            <div id="sidebar">
+            <div id="container">
+                <div id="sidebar">
 
                <div class="header-sidebar">
                   <div>
@@ -36,34 +37,16 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 
-
                 <ul>
-                    <li>
-                        <img src="Avatar/avatar_1.jpg" alt=""><span>Michele</span>
-                    </li> 
-                    <li>
-                        <img src="Avatar/avatar_2.jpg" alt=""><span>Fabio</span>
+                    <!-- Itera sulle attività nell'array contact -->
+                    <li class="contact" v-for="(contact, index) in contacts" :key="index">
+                        <img :src="contact.avatar" alt="Avatar di {{ contact.name }}">
+                        <span>{{ contact.name }}</span>
                     </li>
-                    <li>
-                        <img src="Avatar/avatar_3.jpg" alt=""><span>Samuele</span>
-                    </li>
-                    <li>
-                        <img src="Avatar/avatar_4.jpg" alt=""><span>Alessandro</span>
-                    </li>
-                    <li>
-                        <img src="Avatar/avatar_io.jpg" alt=""><span>Alessandro</span>
-                    </li>
-                    <li>
-                        <img src="Avatar/avatar_4.jpg" alt=""><span>Claudia</span>
-                    </li>
-                    <li>
-                        <img src="Avatar/avatar_1.jpg" alt=""><span>Federico</span>
-                    </li>
-                    <li>
-                        <img src="Avatar/avatar_io.jpg" alt=""><span>Davide</span>
-                    </li>
-                    
+                      
                 </ul>
+               
+                
             </div>
             <div id="main-content">
                 
@@ -82,7 +65,16 @@
                 </div>
 
                 <div class="main-center">
-                    
+                    <div class="message user-message">
+                        <span>Hai portato il cane?</span>
+                    </div>
+                    <div class="message user-message">
+                        <span>Ricordati di stendere i panni</span>
+                    </div>
+
+                    <div class="message interlocutor-message">
+                        <span>Tutto fatto!</span>
+                    </div>
                 </div>
 
                 <div class="footer-main">
@@ -97,13 +89,10 @@
             </div>
         </div>
     </div>
+    </div>
    
-    <!--<div class="chat-container">
-
-        <div class="message user-message">Messaggio scritto dall'utente</div>
-        <div class="message interlocutor-message">Messaggio scritto dall'interlocutore</div>
-       
-    </div>-->
+   
+    
 
     <script src="https://unpkg.com/vue@3"></script>
     <script src="script.js"></script>
