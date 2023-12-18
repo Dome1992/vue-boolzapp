@@ -166,7 +166,7 @@ methods: {
         });
         this.newMessage=""; // resetta vuota la barra del messaggio
       }
-    },
+    }
 }, 
 /*methods:{
   addMessage(){

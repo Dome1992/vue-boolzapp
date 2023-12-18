@@ -40,7 +40,6 @@
                 <ul>
                     <!-- Itera sulle attività nell'array contact -->
                     <li class="contact" v-for="(contact, index) in contacts" :key="index" @click="showChat(index)" v-show="contact.name.toLowerCase().includes(searchChat.toLowerCase())">
-                        
                         <img :src="contact.avatar" alt="Avatar di {{ contact.name }}">
                         <span>{{ contact.name }}</span>
                     </li>
