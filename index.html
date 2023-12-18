@@ -34,12 +34,13 @@
                 </div>
                 <div class="search-bar">
                     <a href=""><i class="fa fa-search"></i></a>
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="searchChat">
                 </div>
                 
                 <ul>
                     <!-- Itera sulle attività nell'array contact -->
-                    <li class="contact" v-for="(contact, index) in contacts" :key="index" @click="showChat(index)">
+                    <li class="contact" v-for="(contact, index) in contacts" :key="index" @click="showChat(index)" v-show="contact.name.toLowerCase().includes(searchChat.toLowerCase())">
+                        
                         <img :src="contact.avatar" alt="Avatar di {{ contact.name }}">
                         <span>{{ contact.name }}</span>
                     </li>
@@ -87,7 +88,7 @@
                     <i class="fa-regular fa-face-smile" style="color: #a7a6a6"></i>
 
                     <div>
-                        <input type="text" placeholder="Scrivi nuovo messaggio" id="input-message">
+                        <input type="text" placeholder="Scrivi nuovo messaggio" v-model="newMessage" id="input-message" @keyup.enter="addMessage">
                     </div>
 
                     <i class="fa-solid fa-microphone" style="color: #a7a6a6"></i>

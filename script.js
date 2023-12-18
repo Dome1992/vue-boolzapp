@@ -3,6 +3,8 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      newMessage: "", // variabile vuota per nuovo messaggio
+      searchChat: "", // variabile vuota per la ricerca chat
       contacts: [
         {
           name: 'Michele',
@@ -155,7 +157,28 @@ methods: {
     showChat(index) {
         this.selectContact= index;
     },
+
+    addMessage(){
+      if (this.newMessage !=="") {
+        this.contacts[this.selectContact].messages.push({
+          message:this.newMessage,
+          status: 'message user-message',
+        });
+        this.newMessage=""; // resetta vuota la barra del messaggio
+      }
+    },
 }, 
+/*methods:{
+  addMessage(){
+    if (this.newMessage !=="") {
+      this.contacts[this.selectContact].messages.push({
+        message:this.newMessage,
+        status: 'message user-message',
+      });
+      this.newMessage=""; // resetta vuota la barra del messaggio
+    }
+  },
+},*/
 
 }).mount('#app');
 
