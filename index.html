@@ -39,7 +39,7 @@
                 
                 <ul>
                     <!-- Itera sulle attività nell'array contact -->
-                    <li class="contact" v-for="(contact, index) in contacts" :key="index">
+                    <li class="contact" v-for="(contact, index) in contacts" :key="index" @click="showChat(index)">
                         <img :src="contact.avatar" alt="Avatar di {{ contact.name }}">
                         <span>{{ contact.name }}</span>
                     </li>
