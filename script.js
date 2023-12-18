@@ -19,7 +19,11 @@ createApp({
               message: 'Ricordati di stendere i panni',
               status: 'message user-message'
             },
-            // Altri messaggi...
+            {
+              date: '10/01/2020 16:30:55',
+              message: 'Tutto fatto',
+              status: 'message interlocutor-message'
+            },
           ]
         },
         {
@@ -29,10 +33,14 @@ createApp({
             messages: [
               {
                 date: '10/01/2020 16:30:55',
-                message: 'Tutto fatto',
+                message: 'Hai visto la partita ieri?',
                 status: 'message interlocutor-message'
               },
-              // Altri messaggi...
+              {
+                date: '10/01/2020 15:50:00',
+                message: 'Si! male male ieri a Bologna',
+                status: 'message user-message'
+              },
             ]
         },
         {
@@ -43,9 +51,19 @@ createApp({
               {
                 date: '15/05/2023 17:30:55',
                 message: 'Andiamo al mare?',
+                status: 'message interlocutor-message'
+              },
+              {
+                date: '15/05/2023 17:30:55',
+                message: 'Non ci sono amico mio',
                 status: 'message user-message'
               },
-              // Altri messaggi...
+              {
+                date: '15/05/2023 17:30:55',
+                message: 'Ok allora andiamo domani',
+                status: 'message interlocutor-message'
+              },
+              
             ]
         },
         {
@@ -55,10 +73,14 @@ createApp({
             messages: [
               {
                 date: '15/05/2023 17:40:30',
-                message: 'Ciao Bro.. forse non riesco!',
+                message: 'Ciao Bro.. come sta andando il corso?',
                 status: 'message interlocutor-message'
               },
-              // Altri messaggi...
+              {
+                date: '15/05/2023 17:40:30',
+                message: 'Bello tosto, ma ci sta dai!',
+                status: 'message user-message'
+              },
             ]
         },
         {
@@ -71,6 +93,11 @@ createApp({
                 message: 'Stasera calcetto?',
                 status: 'message user-message'
               },
+              {
+                date: '15/05/2023 14:40:30',
+                message: 'Certo, chi perde paga il campo',
+                status: 'message interlocutor-message'
+              },
               // Altri messaggi...
             ]
         },
@@ -81,7 +108,7 @@ createApp({
             messages: [
               {
                 date: '15/05/2023 14:40:30',
-                message: 'Certo, chi perde paga il campo',
+                message: 'Ciao!',
                 status: 'message interlocutor-message'
               },
               // Altri messaggi...
@@ -97,6 +124,11 @@ createApp({
                 message: 'Hai finito il progetto?',
                 status: 'message user-message'
               },
+              {
+                date: '09/02/2023 09:40:30',
+                message: 'Si! ora ho pushato',
+                status: 'message interlocutor-message'
+              },
               // Altri messaggi...
             ]
         },
@@ -107,7 +139,7 @@ createApp({
             messages: [
               {
                 date: '09/02/2023 09:40:30',
-                message: 'Si! ora ho pushato',
+                message: 'Buondi',
                 status: 'message interlocutor-message'
               },
               // Altri messaggi...
